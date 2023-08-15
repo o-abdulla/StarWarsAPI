@@ -1,0 +1,10 @@
+﻿@model StarwarsModel
+
+@{
+    foreach(Result c in Model.results)
+    {
+        <h1>@c.name</h1>
+        <p>Height: @c.height</p>
+        <p>Weight: @c.mass</p>
+    }
+}
